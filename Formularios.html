@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formularios</title>
+		<style>
+			fieldset {
+				margin-bottom:  1em;
+			}
+			form div {
+				margin-top: 1.5em;
+				padding: 10px;
+				border: 1px solid gray;
+			}
+			label {
+				font-weight: bold;
+			}
+			label: first-child {
+				display: block;
+				margin-bottom: .25em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Formularios</h1>
+		
+			<!--<form action="http://localhost:8080/" method="get">-->
+
+			<!--asi debe configurarse el formulario si se suben archivos:-->
+
+		<form action="http://localhost:8080/listar-parametros" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Campos tradicionales</legend>
+
+				<div>
+					<label for="campoTexto">Campo de texto:</label>
+					<input type="text" name="campoTexto" id="campoTexto" placeholder="Ingrese algo aquí..." value="Texto por defecto"/>
+				</div>
+
+				<div>
+					<label for="campoContrasenia">Campo de contraseña:</label>
+					<input type="password" name="campoContrasenia" id="campoContrasenia" placeholder="Contrasenia..." value="123"/>
+				</div>
+
+				<div>
+					<label for="areaTexto">Área de texto:</label>
+					<textarea name="areaTexto" id="areaTexto" placeholder="Ingrese algo aquí...">Texto por defecto</textarea>
+				</div>
+
+				<div>
+					<input type="checkbox" name="casillaVerificacion1" id="casillaVerificacion1" value="true" checked="checked"/>
+					<label for="casillaVerificacion1">casillaVerificacion1</label>
+					<input type="checkbox" name="casillaVerificacion2" id="casillaVerificacion2" value="true"/>
+					<label for="casillaVerificacion2">casillaVerificacion2</label>
+				</div>
+
+				<div>
+					<input type="radio" name="botonOpcion" id="botonOpcion1" value="botonOpcion1"/>
+					<label for="botonOpcion1">botonOpcion1</label>
+					<input type="radio" name="botonOpcion" id="botonOpcion2" value="botonOpcion2"/>
+					<label for="botonOpcion2">botonOpcion2</label>
+				</div>
+
+				<div>
+					<label for="listaDesplegable">Lista desplegable:</label>
+					<select name="listaDesplegable" id="listaDesplegable">
+						<option value="Opcion1">Opción 1</option>
+						<option value="Opcion2">Opción 2</option>
+						<option value="Opcion3" selected="selected">Opción 3</option>						
+					</select>
+				</div>
+
+				<div>
+					<label for="lista">Lista:</label>
+					<select name="lista" id="lista" size="3" multiple="multiple">
+						<option value="Opcion1">Opción 1</option>
+						<option value="Opcion2">Opción 2</option>
+						<option value="Opcion3" selected="selected">Opción 3</option>
+						<option value="Opcion4">Opción 4</option>
+						<option value="Opcion5">Opción 5</option>
+
+						
+					</select>
+				</div>
+
+
+
+			</fieldset>
+		</form>
+	</body>
+</html>
