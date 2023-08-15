@@ -83,10 +83,58 @@
 						
 					</select>
 					<div>
-						<label for="selectorArchivos">selectorArchivos:</label>
-						<input type="text" file="selectorArchivos" id="selectorArchivos" accept="image/png,image/jpg"multiple="multiple"/>
-					</div>
+						<label for="selectorArchivos">Selector de Archivos (s):</label>
+						<input type="file" file="selectorArchivos" id="selectorArchivos" accept="image/png,image/jpeg"multiple="multiple"/>
+						
+					<div>
+						
+				</div>  
+				<input type="hidden" name="campoOculto" value="campoOculto"/>
+
+				
+				<fieldset>
+					<legend>Botones</legend>
+               <div>
+				<input type="reset"  value="Limpiar"/>
+				<input type="submit" name="botonEnviar" value="Enviar"/>
+				<input type="button" name="botonGenerico" value="Genérico"/>
+
+				<button type="reset"> <strong>Otro <em>Limpiar</em></strong></button>
+				<button type="submit" name = "botonEnviar"> <strong>Otro <em>Enviar</em></strong></button>
+			    <button type="button" id= "otrobotonGenerico">Otro Genérico</button>
+
+
+			   </div>
+
+
+
+
+
+				</fieldset>
+
+			
+			<fieldset>
+				<legend>Campos HTML5</legend>
+				<div>
+					<form>
+						SEARCH:<input type="search"/><br><br>
+						TEL:<input type="tel"/> <br><br>
+						TIME:<input type="time"/> <br><br>
+						URL:<input type="url"/> <br><br>
+						WEEK:<input type="week"/> <br><br>
+						RANGE:<input type="range"/> <br><br>
+					  </form>
+
+					  <form>
+						Correo:<input type="email" placeholder="Escribe tu correo aquí."/> <br><br>
+						Teléfono:<input type="tel" size="20" autofocus/> <br><br>
+						Texto:<input type="text" value="No puedes editar esto." readonly/> <br><br>
+						Número:<input type="number" disabled/> <br><br>
+						</form>
 				</div>
+
+
+			</fieldset>
 
 
 
