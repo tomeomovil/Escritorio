@@ -96,61 +96,81 @@
 					<legend>Campos HTML5</legend>
 					<div>
 						
-							<label for="campoNumerico>Campo Númerico:"></label>
+							<label for="campoNumerico">Campo Númerico:"</label>
 							<input type="number" name="campoNumerico" id="campoNumerico" min="1" max="10" step=".1"/> <br><br>
 					</div>	
 					
 					<div>
-						<label for="campoEmail>Campo de Email:"></label>
+						<label for="lista">Lista:</label>
+						<label for="campoEmail">Campo de Email:</label>
 						<input type="email" name="Email" id="campoEmail"><br><br>
 					</div>
 
 					<div>
-						<label for="campoTelefonico>Campo Telefonico:"></label>
+						<label for="campoTelefonico">Campo Telefonico:</label>
 						<input type="tel" name="campoTelefonico" id="campoTelefonico"><br><br>
 					</div>
 
 					<div>
-						<label for="campoURL>Campo URL:"></label>
+						<label for="campoURL">Campo URL:</label>
 						<input type="url" name="campoURL" id="campoURL"><br><br>
 					</div>
 					<div> 
-						<label for="campoURL>Campo de URL:"></label>
+						<label for="campoURL">Campo de URL:</label>
 						<input type="url" name="campoURL" id="campoURL"><br><br>
 
 			        </div>  
 					<div> 
-						<label for="campoBusqueda>Campo de Busqueda:"></label>
+						<label for="campoBusqueda">Campo de Busqueda:</label>
 						<input type="search" name="campoBusqueda" id="campoBusqueda"><br><br>
 
 			        </div>  
 					<div> 
-						<label for="campoFecha>Campo de Fecha:"></label>
+						<label for="campoFecha">Campo de Fecha:</label>
 						<input type="date" name="campoFecha" id="campoFecha"><br><br>
 
 			        </div> 
 					<div> 
-						<label for="campoHora>Campo de Hora:"></label>
+						<label for="campoHora">Campo de Hora:</label>
 						<input type="time" name="campoHora "id="campoHora"><br><br>
 
 			        </div> 
 					<div> 
-						<label for="campoFechaHora>Campo Fecha y Hora:"></label>
+						<label for="campoFechaHora">Campo Fecha y Hora:</label>
 						<input type="datetime" name="campoFechaHora "id="campoFechaHora"><br><br>
 
 			        </div> 
 					<div> 
-						<label for="campoMes>Campo de Mes:"></label>
+						<label for="campoMes">Campo de Mes:</label>
 						<input type="month" name="campoMes "id="campoMes"><br><br>
 
 			        </div> 
 					<div> 
-						<label for="campoSemana>Campo de Semana:"></label>
-						<input type="week" name="campoSemana "id="campoSemana"><br><br>
+						<label for="campoSemana">Campo de Semana:</label>
+						<input type="week" name="campoSemana" id="campoSemana"><br><br>
+
 					</div>
 					<div> 
-						<label for="campoRango>Campo Rango:"></label>
-						<input type="range" name="campoRango "id="campoRango"><br><br>
+						<label for="campoRango">Campo Rango:</label>
+						<input type="range"  name="campoRango" id="campoRango" min="1" max="10" step=".5"/><br><br>
+					</div>
+					<div> 
+						<label for="campoColor">Campo Color:</label>
+						<input type="color"  name="campoColor" id="campoColor" /><br><br>
+					</div>
+
+					<datalist id="Textos">
+                      <option value="Texto uno">
+					  <option value="Texto dos">
+					  <option value="Texto tres">
+					  <option value="Texto cuatro">
+					  <option value="Texto cinco">
+					  <option value="Texto seis">
+
+					</datalist>
+					<div> 
+						<label for="campoTextoAutocompletado">Campo Texto Autocompletado:</label>
+						<input type="text"  name="campoTextoAutocompletado" id="campoTextoAutocompletado" list="Textos"/><br><br>
 					</div>
 			       
 	
