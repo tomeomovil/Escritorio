@@ -1,12 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Tomeo</title>
+    <style> 
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://th.bing.com/th/id/R.8a1118212742c874ddd015f95334cac8?rik=yilMr9TNbVvigw&riu=http%3a%2f%2fwww.webdisenoempresarial.com%2feconomicas%2fimages%2fsliders%2f2.jpg&ehk=zga556s1ozeQnyUVyHfRvNxjXKp0j1gWYKPOVVqbbXw%3d&risl=&pid=ImgRaw&r=0'); /* Replace 'background.jpg' with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #090707;
+        }
+
+        header {
+            background-color: #c2880d;
+            background-image: url("https://streetsmartcreative.com/wp-content/uploads/2017/08/web-design.jpg");
+            
+            color: black;
+            text-align: center;
+            padding: 6rem 0;
+            box-shadow: 0 6px 12px rgba(132, 7, 7, 0.1);
+        }
+
+       
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label, input, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 0.5rem;
+            border: 1px solid #750e0e;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        
+        button[type="submit"] {
+            background-color: #ff7f50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #e6603e;
+        }
+    </style>
+    <title>Mi Página Paulo Tomeo</title>
 </head>
 <body>
-    <h1>Bienvenido Paulo Tomeo</h1>
-    <h2>Muchas Gracias</h2>
+    <header>
+        <h1>Bienvenido a Nuestra Página</h1>
+        <p>Explora un mundo de innovación y creatividad con nosotros</p>
+    </header>
+    <nav>
+       
+    </nav>
+    <main>
+        <section>
+            <h2>Descubre Nuestra Pasión</h2>
+            <p>Somos una apasionada empresa que fusiona <strong>tecnología</strong> y <strong>creatividad</strong> para crear soluciones excepcionales.</p>
+        </section>
+        <section>
+            <h2>Explora Nuestros Servicios</h2>
+            <ul>
+                <li>Desarrollo Web Personalizado</li>
+                <li>Diseño de Experiencia de Usuario</li>
+                <li>Estrategias de Marketing Digital</li>
+            </ul>
+        </section>
+    </main>
+    <section>
+        <h2>Proyectos Destacados</h2>
+        <div class="project">
+           
+        </div>
+        <div class="project">
+           
+        </div>
+    </section>
+    <section>
+        <h2>Contacta con Nosotros</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Nuestra Compañía. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
+
