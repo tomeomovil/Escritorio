@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</a>
+```
     <style> 
         
         body {
@@ -14,7 +17,30 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             color: #090707;
+            
         }
+
+    .whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+}
 
         header {
             background-color: #c2880d;
@@ -47,7 +73,7 @@
         input[type="email"],
         textarea {
             padding: 0.5rem;
-            border: 1px solid #750e0e;
+            border: 3px solid #750e0e;
             border-radius: 5px;
             width: 100%;
         }
@@ -55,7 +81,7 @@
         
         button[type="submit"] {
             background-color: #ff7f50;
-            color: white;
+            color: rgb(14, 8, 8);
             padding: 0.5rem 1rem;
             border: none;
             border-radius: 5px;
@@ -70,8 +96,11 @@
     <title>Mi Página Paulo Tomeo</title>
 </head>
 <body>
+   
     <header>
         <h1>Bienvenido a Nuestra Página</h1>
+        
+
         <p>Explora un mundo de innovación y creatividad con nosotros</p>
     </header>
     <nav>
@@ -112,7 +141,12 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             <button type="submit">Enviar</button>
+            <a href="https://wa.me/092121413?text=Hola%20Equipo%20de%20Mi%20P%C3%A1gina,%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20servicios." target="_blank" class="whatsapp-button">
+                <img src="https://cdn.pixabay.com/photo/2016/08/27/03/07/whatsapp-1623579_960_720.png" alt="WhatsApp" class="whatsapp-icon">
+                Contáctanos en WhatsApp
+           
         </form>
+        
     </section>
     <footer>
         <p>&copy; 2023 Nuestra Compañía. Todos los derechos reservados.</p>
