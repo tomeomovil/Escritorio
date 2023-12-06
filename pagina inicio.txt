@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+class PaginaInicio extends StatelessWidget {
+  final String titulo;
+
+  const PaginaInicio({super.key,required this.titulo});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(titulo),
+      ),
+    );
+  }
+}
